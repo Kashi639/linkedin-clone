@@ -1,0 +1,112 @@
+.accountOverlay{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* background-color: red;
+  opacity: 0.5; */
+}
+.accountModal{
+  position: absolute;
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  top: 62px;
+  /* left: 892px; */
+  right: 22.3%;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  pointer-events: all;
+}
+
+.accountModal__top{
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-top-left-radius: 5px;
+}
+.accountModal__topInfo{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.accountModal__avatar{
+  margin-right: 10px;
+}
+.accountModal__topInfo > p{
+  font-size: 16px;
+  font-weight: 600;
+  flex: 1;
+}
+.accountModal__topInfo > p > span{
+  font-weight: 100;
+}
+
+.accountModal__top > button{
+  color: rgb(10, 102, 194);
+  border: 1px solid rgb(10, 102, 194);
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: border 0.1s;
+  padding: 0;
+  height: 24px;
+}
+.accountModal__top > button:hover{
+  border: 2px solid rgb(10, 102, 194);
+  cursor: pointer;
+}
+
+.accountModal__account, .accountModal__manage, .accountModal__signOut{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-top: none;
+  align-items: left;
+  padding: 12px 7px 7px 14px;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.accountModal__account > h4, .accountModal__manage> h4{
+  font-size: 17px;
+  font-weight: 600;
+}
+.accountModal__accountPremium{
+  display: flex;
+  cursor: pointer;
+}
+.accountModal__accountPremium:hover > p{
+  color: rgb(10, 102, 194);
+}
+.accountModal_premiumIcon{
+  color:rgb(231,163,58);
+  margin-right: 4px;
+}
+.accountModal__accountPremium> p{
+  color: gray;
+  font-size: 15px;
+  font-weight: 600;
+}
+.accountModal__accountPremium> p:hover{
+  text-decoration: underline;
+}
+.accountModal__list{
+  font-size: 15px;
+  font-weight: 300;
+  color: gray;
+}
+.accountModal__list:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.accountModal__signOut{
+  padding: 10px 7px 7px 14px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
